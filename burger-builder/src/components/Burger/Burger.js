@@ -8,7 +8,12 @@ const burger = ( props ) => {
     return [...Array(props.ingredients[igKey])].map((_, key) => {
       return <BurgerIngredients key={key + igKey} type={igKey}></BurgerIngredients>
     })
-  })
+  }).reduce((preValue, currentValue) => 
+  { return preValue.concat(currentValue)}, []);
+
+  if (modifiedIngredients.length === 0) {
+    modifiedIngredients = <p>Please Select the Ingredients</p>
+  }
   return (
     <div className={classes.Burger}>
       <BurgerIngredients type="bread-top"></BurgerIngredients>
