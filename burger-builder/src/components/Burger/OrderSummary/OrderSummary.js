@@ -5,7 +5,7 @@ import Button from '../../UI/Button/Button';
 const orderSummary = ( props ) => {
     const ingredients = props.ingredients;
     const ingredientsSummary = Object.keys(ingredients).map(igKey => {
-        return <li><span style={{textTransform: 'capitalize'}}>{igKey}</span>: {ingredients[igKey]}</li>
+        return <li key={igKey}><span style={{textTransform: 'capitalize'}}>{igKey}</span>: {ingredients[igKey]}</li>
     });
     return (
         <Aux>
