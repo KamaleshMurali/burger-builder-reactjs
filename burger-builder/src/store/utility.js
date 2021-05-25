@@ -1,9 +1,6 @@
-const updatedObject = (currentState, updatedState) => {
+export const updateObject = (oldObject, updatedProperties) => {
     return {
-        ...currentState,
-        ...updatedState
-    }
-}
-
-export default updatedObject;
-
+        ...oldObject,
+        ...updatedProperties
+    };
+};

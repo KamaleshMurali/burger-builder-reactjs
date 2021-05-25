@@ -6,7 +6,7 @@
 }
 
 .NavigationItem a {
-    color: #8F5C2c;
+    color: #8F5C2C;
     text-decoration: none;
     width: 100%;
     box-sizing: border-box;
@@ -22,7 +22,6 @@
 @media (min-width: 500px) {
     .NavigationItem {
         margin: 0;
-        box-sizing: border-box;
         display: flex;
         height: 100%;
         width: auto;
